@@ -1,0 +1,33 @@
+
+.btn {
+	border: 2px solid grey;
+	padding: 10px 14px;
+	margin: 200px 10px;
+	border-radius: 3px;
+
+	position: relative;
+	overflow: hidden;
+}
+
+.btn:focus {
+	outline: none;
+	border: 2px solid brown;
+}
+
+.btn > .dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: pink;
+	opacity: 0.4;
+
+	position: absolute;
+
+	animation: 0.5s big forwards;
+}
+
+
+@keyframes big{
+	0%{transform: scale(0.1)}
+	100%{transform: scale(15)}
+}
